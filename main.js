@@ -3,5 +3,5 @@ function todoList() {
     var text = document.createTextNode(item)
     var newItem = document.createElement("li")
     newItem.appendChild(text)
-    document.getElementBytID("todoList").appendChild(newItem)
+    document.getElementById("todoList").appendChild(newItem)
 }
