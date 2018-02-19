@@ -10,23 +10,47 @@
 
 <body>
 
-<h1> To Do List App</h1>
+<h1> To Do List </h1>
 <form id="todoForm">
        <input id="todoInput">
-       <button type="button" onclick="todoList()"> Click Me</button>
+       <button type="button" onclick="todoList()"> Add an item yourself</button>
        
   </form> 
       
-  <ol id="todoList">
-      
-  </ol>    
-       
-
-        
     
+       
+<ul id="todoList">
+        <li>Köpa mjölk</li>
+        <li>Lära mig JavaScript</li>
+        <li>Göra klart inlämningsuppgifter</li>
+        <li> Fixa todo list javaScript</li>
+    </ul> 
+    <ul id="done">
+       
+       
+        
+    </ul>
+        
+ <!--  NYTT SE OM DET FUNKAR-->
+  
+<form>
+         <label for="item">Add an item: </label>
+          <input id="item" type="text" size="20"><br>
+         <input id="submitButton" type="button" value="Add!">
+     </form>
+     <ul id="ul">
+     </ul>
+     <p>
+         Click an item to remove it from the list.
+    </p>  
+   
+         <!-- SE OM DET FUNKAR SLUT -->   
     
 <script src="main.js"></script>
  
 </body>
 
 </html>
+
+
+
