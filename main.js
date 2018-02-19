@@ -11,7 +11,7 @@ function todoList() {
 const done = document.getElementById('done') /* Hämta elementet med id done*/
 const listItems = document.querySelectorAll('li'); /* välj alla li taggar*/
 done.style.color='forestgreen'; /* gör så att när den är väl checkad så kommer den till done listan och texten blir grön */
-   
+ 
  
   newItem.onclick = function() {
    
