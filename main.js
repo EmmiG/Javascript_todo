@@ -33,45 +33,71 @@ done.style.color='forestgreen'; /* gör så att när den är väl checkad så ko
 
 
 
-/* remove items NYTT */
+/* TODOLIST   unchecked */
+
 function removeElementTodoList() {
-  console.log(todoList); 
+  
  
     todoList.removeChild(todoList.lastElementChild);
+    
+    
   
  
 }
 
-/* remove NYTT Slut */
 
 
 
-/* NYTT NU */
+/* NYTT ALL ITEMS REMOVE*/
 
+function removeAllItemsTodoList() {
  
+ var todoList = document.getElementById("todoList"); 
+    todoList.innerHTML = '';
+ 
+}
 
 
-/* NYTT NU SLUT */
+/* NYTT ALL ITEMS REMOVE SLUT */
 
-
-
-
-
-
-
-
-/* NYTT */
-
-//Övning 6 - Stryk mig inte, flytta mig tack
-/*Använd samma HTML som i förra övningen. Du ska istället för att ta bort elementet när du klickar på det, flytta det till listan med id="done". Så vid klick så tas det bort från första listan och läggs i den andra listan.*/
+ /* TODOLIST uncheck SLUT*/
 
 
 
 
+/* DONE  checked */
+
+function removeElementDoneList() {
+  
+ 
+    done.removeChild(done.lastElementChild);
+    
+    
+  
+ 
+}
 
 
-/* SLUT NYTT */
 
-/* NYTT 2 */
+
+/* NYTT ALL ITEMS REMOVE*/
+
+function removeAllItemsDoneList() {
+ 
+  var done = document.getElementById("done");  
+    done.innerHTML = '';
+ 
+}
+
+
+/* DONE checked slut*/
+
+
+
+
+
+
+
+
 
 
