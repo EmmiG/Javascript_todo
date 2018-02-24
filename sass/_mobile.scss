@@ -20,12 +20,12 @@ li{
 }
 
 nav ul {
-    //display: flex;
+    display: flex;
 }
 
 
 nav li {
-    //flex: 1;
+    flex: 1;
     list-style: none;
     margin: 10px;
     
@@ -155,11 +155,12 @@ footer{
 
 /* text titlar*/
 
-.todoBox, h1{
+.todoBox, #h1{
     
 font-family: 'Raleway', sans-serif;
     padding-bottom: 50px;
     padding-top: 10px;
+    
     
     
 }
@@ -169,9 +170,9 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-.doneBox, .h3 {
+.doneBox, h3 {
     font-family: 'Raleway', sans-serif;
-    @extend .todoBox, h1
+   
 }
 
 /* text titlar slutar */
@@ -219,11 +220,14 @@ font-family: 'Raleway', sans-serif;
     
 }
 
+
 #removeItemTodo :hover {
-    
+    display: none;
     background-color: black;
     color: white;
 }
+
+
 
 
 
@@ -247,9 +251,14 @@ font-family: 'Raleway', sans-serif;
 }
 /* input slutar */
 
-#test, #addItemYourself{
+#inputWrapper, #addItemYourself{
     margin-top: 20px;
 }
+
+
+
+
+
 
 
 
