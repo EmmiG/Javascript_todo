@@ -1,15 +1,16 @@
 
 
 function todoLists() {
-    var item = document.getElementById("todoInput").value
-    var text = document.createTextNode(item)
-    var todoList = document.getElementById("todoList");  //getting element <ul> to add element to
-    var newItem = document.createElement("li")  //creating li element to add
+    var item = document.getElementById("todoInput").value /* variabeln item innehåller dokument elementet todoInput som hämtas från index filen, skapar en ruta där man kan skriva inuti  */
+    var text = document.createTextNode(item) /* variabeln text, skapar textnod som vidareförmedlar data , den hämtar variabeln item , är till för att användaren ska kunna skriva in valfri text i todoInput fältet */
+    var todoList = document.getElementById("todoList");  /* variabeln todoList innehåller dokument elementet todoList, <ul> som hämtas från index filen, för att kunna lägga till element på <ul>*/
+    var newItem = document.createElement("li")  /* variabeln newItem innehåller dokument elementet li , skapar li element som kan läggas till */
     
-    newItem.appendChild(text)
+    newItem.appendChild(text)   /* hämtar variabeln newItem, lägger till text i todoInput fältet med hjälp av variablen text vi skapa tidigare*/
+    //när man väl har skirvit in något i todoInput  lägger till barnet */
     document.getElementById("todoList").appendChild(newItem)
     
-    console.log(todoLists);
+    //console.log(todoLists);
     
     
     const todo = document.getElementById('todoList');/* Hämta elementet med id todoList*/
@@ -19,7 +20,7 @@ done.style.color='forestgreen'; /* gör så att när den är väl checkad så ko
  
  
   newItem.onclick = function() {
-        console.log(this)
+        //console.log(this)
         todoList.removeChild(this);         /* ta bort todo barnet*/
         done.appendChild(this);         /* skapas istället under done*/
 
