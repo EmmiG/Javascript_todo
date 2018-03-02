@@ -1,7 +1,4 @@
-
-
-
-/* Nav, ul , li nytt*/
+/* Nav, ul , li , body*/
 
 nav {
     display: block;
@@ -15,8 +12,8 @@ ul {
     list-style: none;
 }
 
-li{
-     font-family: 'Raleway', sans-serif;
+li {
+    font-family: 'Raleway', sans-serif;
 }
 
 nav ul {
@@ -28,7 +25,7 @@ nav li {
     flex: 1;
     list-style: none;
     margin: 10px;
-    
+
 }
 
 nav ul li a {
@@ -39,87 +36,65 @@ nav ul li a {
 
 
 
-/* nav ul, li nytt slut*/
-
 body {
-     margin: 0;
-    
-    
-       
-        }
+    margin: 0;
+}
 
-.logo{
+
+/* logo */
+
+.logo {
     background-color: burlywood;
     width: 100%;
-    //max-width: 375px;
     height: 100px;
 }
 
-.todoList{
-    
+/* clear */
 
-    
-    
-    }  
-
-
-.wrapper{
-    margin: 0 auto;
-}
-
-.parchment{
-    
-    padding-top: 70px;
-    
-    text-align: center;
-    
-    /*nytt*/
-    
-    //height: 100%;
-    padding-bottom: 20px;
-    //margin: 0;
-    
-background-image: url(/images/old_paper_texture_relief_large.jpg);
-   //width: 100%; /* for IE 6 */
-    
-       display: block;
-   background-position: center;
-   height: 100%;
-   background-size: cover;
-    
-    /* nytt slut*/
-    
- 
-   
-    
-}
-
-
-.clear{
+.clear {
     clear: both;
 }
 
+/* wrapper */
 
-
-footer{
-  width: 100%;
-    height: 100px;
-    background-color: black;
-   
+.wrapper {
+    margin: 0 auto;
 }
 
+/* parchment */
 
-/* NYTT */
+.parchment {
 
-.todoBox { 
+    padding-top: 70px;
     text-align: center;
-   background-color: white;
-   width: 70%;
+    padding-bottom: 20px;
+    background-image: url(/images/old_paper_texture_relief_large.jpg);
+    display: block;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+
+
+
+}
+
+.parchment img {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+}
+
+/* todo klasser */
+
+.todoBox {
+    text-align: center;
+    background-color: white;
+    width: 70%;
     margin: 0 auto;
     border-radius: 6px;
     line-height: 2em;
     text-align: center;
-    
+
 
 }
 
@@ -127,69 +102,30 @@ footer{
     padding: 10px;
 }
 
+/* titel i todo */
 
-.doneBox {
-      @extend .todoBox;
-          margin-top: 30px;
-}
-.doneBox ul{
-    text-align: center;
-}
-.doneBox ul, li {
-    padding: 10px; 
-    text-align: center;
-}
+.todoBox, #h1 {
 
-
-
-.parchment img {
-    display: block;
-   width: 100%;
-   min-height: 100%;
-}
-
-
-/* nytt slut*/
-
-
-
-/* text titlar*/
-
-.todoBox, #h1{
-    
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding-bottom: 50px;
     padding-top: 10px;
-    
-    
-    
+
+
+
 }
 
-.h2{
+/* text titel mellan todo och done */
+
+.h2 {
     font-family: 'Raleway', sans-serif;
 }
 
 
-.doneBox, h3 {
-    font-family: 'Raleway', sans-serif;
-   
-}
+/* knappar i todo och done */
 
-/* text titlar slutar */
+#removeItemTodo {
 
-/* h1 an */
-
-
-
-/* h1 an slut */
-
-
-/* buttons */
-
-
-#removeItemTodo{
-
- background-color: burlywood;
+    background-color: burlywood;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -198,26 +134,16 @@ font-family: 'Raleway', sans-serif;
     display: inline-block;
     font-size: 13px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    
-    /*nytt med button*/
-    // background-color: white;
     color: black;
     border: 2px solid black;
-    
-    /* nytt med button slut*/
-    
-    /* hitta annat ställe*/
-     border-radius: 5px;
-    /* hitta annat ställe slut*/
+    border-radius: 5px;
     width: 200px;
     height: 60px;
     margin-bottom: 14px;
-    
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
 
@@ -232,35 +158,154 @@ font-family: 'Raleway', sans-serif;
 
 
 
-#removeAllTodo, #removeItemDone, #removeAllDone, #addItemYourself{
-    
-    
-@extend #removeItemTodo;
-    
+#removeAllTodo {
+
+    background-color: burlywood;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 14px;
+    font-family: 'Raleway', sans-serif;
+
+
+
 }
 
 
 
+#removeItemDone {
 
+    background-color: burlywood;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 14px;
+    font-family: 'Raleway', sans-serif;
 
-/* buttons slut */
-/* input börjar */
-#todoInput{
-     font-family: 'Raleway', sans-serif;
-       border: 1px solid;
-    border-color: black;
-    
 }
-/* input slutar */
 
-#inputWrapper, #addItemYourself{
+#removeAllDone {
+
+    background-color: burlywood;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 14px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+#addItemYourself {
+
+    background-color: burlywood;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 14px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+/* input i todo börjar med knapp */
+
+#inputWrapper, #addItemYourself {
     margin-top: 20px;
 }
 
+#todoInput {
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid;
+    border-color: black;
+
+}
+
+
+/* done klasser  */
+
+.doneBox {
+    text-align: center;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 6px;
+    line-height: 2em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.doneBox ul {
+    text-align: center;
+}
+
+.doneBox ul, li {
+    padding: 10px;
+    text-align: center;
+}
+
+/* titel i done */
+
+.doneBox, h3 {
+    font-family: 'Raleway', sans-serif;
+
+}
 
 
 
+/* footer */
 
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
 
-
-
+}

@@ -1,41 +1,54 @@
-.logo{
+/* logo */
+
+.logo {
     height: 150px;
 }
 
+/* parchment */
+
+.parchment {
+
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+}
+
+/* titel i todo */
 
 #h1 {
-    
+
     font-size: 50px;
-   
+
 }
+
+/* input i todo */
 
 #inputWrapper {
-    
+
     margin-top: 70px;
     display: flex;
-     flex-wrap: wrap;
-      justify-content: center;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
-#todoInput{
-   flex-basis: 50%;
-   height: 50px;
-     
-     
-   
+#todoInput {
+    flex-basis: 50%;
+    height: 50px;
+
 }
+
+/* knappar i todo */
 
 #addItemYourself {
-    
+
     flex-basis: 50%;
-    
-  
-    
+
 }
 
+
 #removeItemTodo :hover {
-    
+
     display: block;
     background-color: black;
     color: white;
@@ -43,21 +56,8 @@
 
 
 
+/* footer */
 
-ul {
-    //display: flex; // om dessa togs bort kunde jag göra texten neråt som vanligt
-    //justify-content: flex-start; // om dessa togs bort kunde jag göra texten neråt som vanligt
-}
-
-
-
-.parchment {
-    
-    padding-top: 100px;
-    
-    padding-bottom: 100px;
-}
-
-footer{
+footer {
     height: 150px;
 }

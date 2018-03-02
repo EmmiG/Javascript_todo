@@ -2,156 +2,155 @@
 <html lang="en">
 
 <head>
+
+
     <meta charset="UTF-8">
     <title>Todo Javascript Inlämningsuppgift 1</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     <link rel="stylesheet" href="css/style.css">
-    
-  
-    
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700%7CVidaloka" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Vidaloka" rel="stylesheet"> 
-    
-     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
 
-    
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
-    
-    </head>
-    
 
-        
- 
-        
-    
 
-    
+</head>
 
-    
+
+
+
 <body>
- 
- 
- 
-        <div class="logo">
-             
-              <!--<img src="images/pappersark.jpg" alt="">  -->
-              
-            
+
+
+
+    <div class="logo">
+        <!-- besha boxen längst upp på sidan, finns plats för att lägga en logga -->
+
+
+
+
+    </div>
+    <!-- *logo* klassen slutar -->
+
+    <div class="clear"></div>
+    <!-- återställa med floats -->
+
+
+
+
+
+    <div class="wrapper">
+        <!-- hela webbsidans *wrapper* börjar -->
+
+
+        <div class="parchment">
+            <!-- en div som fungerar som en behållare och är ett omslag för alla mina boxar -->
+
+
+
+
+
+
+
+
+            <div class="todoBox">
+                <!-- omslag för allt som handlar om todo -->
+
+
+                <h1 id="h1"> To Do List </h1>
+                <!-- h1 som har ett unikt id, titel namn -->
+                <form id="todoForm">
+                    <!-- gav formuläret ett unikt id -->
+                    <div id="inputWrapper">
+                        <!--  omslag för input fältet, unikt id skapades -->
+                        <input id="todoInput">
+                        <!--  unikt id för inputfältet, här skriver användren in ord/ rad som dom vill komma ihåg-->
+
+                        <button id="addItemYourself" type="button" onclick="todoLists()"> Add an item yourself</button>
+                        <!-- Här ser man till så att det som man har skrivit i *todoinput* skickas till id *todoList* som finns under titeln *in progress* -->
+                    </div>
+                    <!-- *inputWrapper* klassen slutar -->
+
+                </form>
+                <!-- form slutar -->
+
+
+                <h2> In progress </h2>
+                <!-- titel namn -->
+
+
+
+
+
+
+                <ul id="todoList">
+                    <!-- skapade ett unikt id på ulen,  under här kommer användaren att skriva in vilken text dom önskar att komma ihåg -->
+
+
+                </ul>
+                <!--  *todoList* klassen slutar -->
+
+
+
+                <button id="removeItemTodo" type="button" onclick="removeElementTodoList()"> Remove latest item </button>
+                <!-- skapade en knapp med unikt id, vid klick kopplas den till main.js filen där funktionen kommer aktiveras och köras, radera ett objekt -->
+                <button id="removeAllTodo" type="button" onclick="removeAllItemsTodoList()"> Remove all items </button>
+                <!-- skapade en knapp med unikt id, vid klick kopplas den till main.js filen där funktionen kommer aktiveras och köras, radera alla objekt -->
+
+            </div>
+            <!-- *todoBox* klassen slutar -->
+
+            <div class="doneBox">
+                <!-- är en samlingsdiv med alla li som är klara och har förts över från *todoList* -->
+                <h3>Done</h3>
+                <ul id="done">
+
+
+
+                </ul>
+                <button id="removeItemDone" type="button" onclick="removeElementDoneList()"> Remove latest item </button>
+                <!-- skapade en knapp med unikt id, vid klick kopplas den till main.js filen där funktionen kommer aktiveras och köras, radera ett objekt -->
+                <button id="removeAllDone" type="button" onclick="removeAllItemsDoneList()"> Remove all items </button>
+                <!-- skapade en knapp med unikt id, vid klick kopplas den till main.js filen där funktionen kommer aktiveras och köras, radera alla objekt -->
+
+
+
+            </div>
+            <!-- *doneBox* klassen slutar  -->
+
+
         </div>
- 
-  <div class="clear"></div>
+        <!-- *parchment* klassen slutar -->
 
- 
-       
+        <footer></footer>
 
-
-<div class="wrapper">
-    
-    
-    <div class="parchment">
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--nytt -->
-    
-    <!--<div class="order_thank_you">  <!-- order_thank_you div blå box 1 -->
-                                       
-
-<!-- köp text som visas när kunden har köpt en vara/produkt, också kundens namn visas -->
-<!--
-                                        <ul>
-                                            <li>Thank you for your purchase <b><?php echo $_POST["name"]; ?></b>!</li>
-                                        </ul>
-
-                                    </div>
-    
-    
-    
-    <!--nytt slut -->
-    
-    
-
- <div class="todoBox">
-
-
-<h1 id="h1"> To Do List </h1>
-<form id="todoForm">
-    <div id="inputWrapper">
-       <input id="todoInput"> <!--här skriver användren in ord/ rad som dom vill komma ihåg-->
-        <!--<img src="images/pappersark.jpg" alt="">  -->
-      <button id="addItemYourself" type="button" onclick="todoLists()"> Add an item yourself</button></div> <!-- Här ser man till så att det som man har skrivit i todoinput skickas till id todoList som finns under titeln in progress
-       
-  </form> 
-     <!------börja--------->
-      
-      
+    </div>
+    <!-- *wrapper* klassen slutar -->
 
 
 
-      
+
+    <script src="main.js"></script>
+    <!-- javascript, gör så att man kan hämta data från main.js filen -->
 
 
-      <!-------slut--------->
-    
- <h2> In progress </h2>
-   
-    
-    
- 
-     
-   
-<ul id="todoList">
- 
-        
-    </ul> 
-       
 
-      
-        <button id="removeItemTodo" type="button" onclick="removeElementTodoList()"> Remove latest item </button>
-        <button id="removeAllTodo" type="button" onclick="removeAllItemsTodoList()"> Remove all items </button>
-        
-      </div> 
-      
-      <div class="doneBox">
-     <h3>Done</h3>  
-    <ul id="done">
-       
- 
-        
-    </ul>
-        <button id="removeItemDone" type="button" onclick="removeElementDoneList()"> Remove latest item </button>
-        <button id="removeAllDone" type="button" onclick="removeAllItemsDoneList()"> Remove all items </button>
-        
-  
-    
-        </div>
-    
-  
-    </div> <!-- parchment slutar -->
-    
-   <footer></footer>
-    
-    </div> <!-- wrapper slutar -->
-    
-       
-    
-    
-<script src="main.js"></script>
- 
- 
- 
 </body>
 
  

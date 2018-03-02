@@ -1,81 +1,78 @@
-.logo{
-    height: 200px;
-}
-
-#h1 {
-    
-    font-size: 90px;
-    
-   
-}
-
-#inputWrapper {
-    
-    margin-top: 70px;
-       padding-bottom: 40px;
-    height: 400px;  // hade 400px; förut
-   
-   
-    
-   
-    
-}
-
-.todoBox{
-  //height: 800px; // hade denna //
-}
-
-
-#todoInput{
-   flex-basis: none;
-   height: 40px;
-    width: 90px;
-      font-size: 30px;
- 
-    
-     
-   
-}
-
-#todoForm, #addItemYourself {
-    
-    flex-basis: none;
-    height: 60px;
-  
-    margin-bottom: 150px;
-  
- 
-   
-   
-    
-  
-    
-}
-
-
-#todoList, #removeItemTodo{
-    
-    font-size: 15px;
-}
-
-
-    
-
-
-
-
-
-
+/* ul */
 
 ul {
     display: block;
-   
+
+
 }
 
 
 
-footer{
+/* logo */
+
+.logo {
     height: 200px;
 }
 
-    
+/* titel i todo */
+
+#h1 {
+
+    font-size: 90px;
+
+
+}
+
+/* todo klass */
+
+.todoBox ul, li {
+    font-size: 20px;
+}
+
+
+/* input  i todo */
+
+#inputWrapper {
+
+    margin-top: 70px;
+    padding-bottom: 40px;
+    height: 400px;
+
+}
+
+
+
+#todoInput {
+
+    height: 40px;
+    width: 90px;
+    font-size: 30px;
+
+}
+
+/* knappar i todo */
+
+#todoForm, #addItemYourself {
+
+    font-size: 15px;
+
+    height: 60px;
+
+    margin-bottom: 150px;
+
+}
+
+
+#todoList, #removeItemTodo {
+
+    font-size: 14.5px;
+}
+
+
+
+
+/* footer */
+
+footer {
+    height: 200px;
+}
